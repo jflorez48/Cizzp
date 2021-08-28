@@ -81,6 +81,7 @@
 
   .contact-form form button{
     color:#ffffff;
+    cursor: pointer;
   }
 
   .contactG{
