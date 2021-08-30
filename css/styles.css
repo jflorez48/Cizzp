@@ -72,7 +72,7 @@
     outline: 0;
     color:#000000;
     font-size: 17px;
-    border-bottom: 1px solid #d63031;
+    border-bottom: 1px solid #ffca28;
   }
 
   .block{
@@ -86,7 +86,7 @@
 
   .contactG{
     text-align: center;
-    color: #ff001e;
+    color:#ffca28;
   }
   
   .contact-form form select option {

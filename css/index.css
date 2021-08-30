@@ -72,7 +72,7 @@ h1 em {
   text-align: center;
   font-size: 30px;
   font-weight: 300;
-  color: #dada1e;
+  color: #ffca28;
   letter-spacing: 1px;
   text-transform: uppercase;
   font-weight: bolder;
@@ -87,8 +87,8 @@ h1 em {
 .seven h1:before {
   content: " ";
   display: block;
-  border-bottom: 1px solid #d1c627;;
-  border-top: 1px solid #d1c627;
+  border-bottom: 1px solid #ffca28;;
+  border-top: 1px solid #ffca28;
   height: 5px;
   background-color: #f8f8f8;
 }
@@ -213,7 +213,7 @@ p {
 
 /*quienes somos*/
 .quienessomosInfo p {
-  text-align: justify;
+ 
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size:17px;
@@ -243,6 +243,7 @@ p {
 
 }
 
+
 .misionimg img {
   max-width: 100%;
   box-shadow: 0 0 10px 0 rgba(92, 53, 151, 0.863);
@@ -255,7 +256,7 @@ p {
 }
 
 .misiondescription {
-  color: #dada1e;
+  color: #ffca28;
   font-family: "Quicksand", sans-serif;
   align-items: baseline;
 }
@@ -290,7 +291,7 @@ p {
   font-weight: 500;
   font-size: 2rem;
   color: rgb(0, 0, 0);
-  text-align: center;
+  /* text-align: center; */
 }
 .material img {
   width: 100%;
@@ -310,6 +311,7 @@ p {
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
     margin: 2rem auto;
+    align-items:initial;
   }
   .material h5 {
     font-family: "Roboto", sans-serif;
@@ -317,6 +319,7 @@ p {
     font-size: 2rem;
     color: rgb(0, 0, 0);
     text-align: justify;
+    margin-top: 0;
   }
 }
 
@@ -352,7 +355,7 @@ p {
 .valores h2 {
   text-align: center;
   margin: 20px auto;
-  color: #dada1e;
+  color: #ffca28;
   margin-top: 3rem;
 }
 
@@ -483,9 +486,20 @@ p {
 .asesoriaimg img {
   width: 100%;
   height: 80vh;
+  object-fit: cover;
   
 }
-.asesoria h3 {
+
+.asesoria{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  align-items: initial;
+  margin-top:40px;
+}
+
+
+.asesoriadescripcion h5 {
   margin: 1rem auto;
   text-align: center;
   line-height: 1.2;
@@ -493,7 +507,8 @@ p {
   font-weight: bold;
   font-size: 1.5rem;
   text-transform: uppercase;
-  color: rgb(82, 190, 91);
+  color: #ffca28;
+  
 }
 
 .imgAsesoria {
@@ -582,7 +597,7 @@ textarea {
   border: none;
   border-radius: 50px;
   transition: 0.3s;
-  background-color: rgba(156, 161, 160, 0.3);
+  background-color: #ffca28; ;
   animation: glow 1s infinite;
   transition: 0.5s;
 }
@@ -605,15 +620,13 @@ textarea {
 }
 
 @keyframes glow {
-  0% {
-    box-shadow: 5px 5px 20px rgb(15, 207, 63), -5px -5px 20px rgb(30, 192, 57);
-  }
+ 
 
-  50% {
-    box-shadow: 5px 5px 20px rgb(81, 224, 210), -5px -5px 20px rgb(81, 224, 210);
+  0% {
+    box-shadow: 5px 5px 20px rgb(235, 219, 4), -5px -5px 20px rgb(241, 167, 9);
   }
   100% {
-    box-shadow: 5px 5px 20px rgb(196, 41, 30), -5px -5px 20px rgb(209, 23, 23);
+    box-shadow: 5px 5px 20px rgb(233, 229, 19), -5px -5px 20px rgb(234, 238, 17);
   }
 }
 
@@ -659,7 +672,7 @@ footer p {
   position: absolute;
   left: 0;
   bottom: -10px;
-  background-color: #e91e63;
+  background-color: #fad501;
   height: 2px;
   box-sizing: border-box;
   width: 50px;
@@ -705,7 +718,7 @@ footer p {
   margin-bottom: 0;
 }
 .derechos span {
-  color: rgb(221, 47, 47);
+  color: rgb(238, 214, 0);
 }
 
 /*responsive*/
@@ -762,7 +775,7 @@ footer p {
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {
   background-color: #d0ced675;
-  color: red;
+  color: #ffca28;
 }
 
 /* Show the dropdown menu on hover */

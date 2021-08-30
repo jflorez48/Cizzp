@@ -71,7 +71,7 @@ header {
 }
 
 .logo img {
-  width: 80%;
+  /* width: 80%; */
   height: 100px;
   margin-top: 10px;
 }
@@ -103,11 +103,11 @@ header {
 }
 
 .dropbtn:hover{
- color: #f12020;
+ color: #ffca28;
 }
 
 .navegacion__enlace:hover{
-  color: #f12020;
+  color: #ffca28;
 }
 
 
@@ -477,7 +477,7 @@ footer span {
   content: '';
   height: 2px;
   width: 15%;
-  background: #f12020;
+  background: #ffca28;
   top: -10px;
 }
 
@@ -506,7 +506,7 @@ footer span {
 }
 
 .left .content .social a span:hover {
-  background: #f12020;
+  background: #ffca28;;
 }
 
 .center .content .fas {
@@ -522,7 +522,7 @@ footer span {
 }
 
 .center .content .fas:hover {
-  background: #f12020;
+  background: #ffca28;;
 }
 
 .center .content .text {
