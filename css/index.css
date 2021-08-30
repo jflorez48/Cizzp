@@ -240,6 +240,13 @@ p {
 
     
   }
+  .vision{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    padding: 10px;
+    margin: 10px;
+  }
 
 }
 
@@ -248,6 +255,16 @@ p {
   max-width: 100%;
   box-shadow: 0 0 10px 0 rgba(92, 53, 151, 0.863);
   border-radius: 20px;
+}
+.visionimg img {
+  max-width: 100%;
+  box-shadow: 0 0 10px 0 rgba(92, 53, 151, 0.863);
+  border-radius: 20px;
+}
+.visionimg img:hover{
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+  overflow: hidden;
 }
 .misionimg img:hover {
   -webkit-transform: scale(1.05);
