@@ -87,7 +87,7 @@ h1 em {
 .seven h1:before {
   content: " ";
   display: block;
-  border-bottom: 1px solid #ffca28;;
+  border-bottom: 1px solid #ffca28;
   border-top: 1px solid #ffca28;
   height: 5px;
   background-color: #f8f8f8;
@@ -104,7 +104,7 @@ a {
 }
 
 p {
-  color:   #656d78;;;
+  color: #656d78;
   font-family: "Roboto", sans-serif;
   text-align: center;
 }
@@ -213,13 +213,12 @@ p {
 
 /*quienes somos*/
 .quienessomosInfo p {
- 
   font-family: "Poppins", sans-serif;
   font-weight: 500;
-  font-size:17px;
+  font-size: 17px;
   line-height: 1.4;
   color: #656d78;
-  
+
   margin: 2rem auto;
 }
 
@@ -229,6 +228,20 @@ p {
 
 /* Mision */
 
+.mision {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  padding: 10px;
+  margin: 10px;
+}
+.vision {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  padding: 10px;
+  margin: 10px;
+}
 
 @media (min-width: 768px) {
   .mision {
@@ -237,19 +250,30 @@ p {
     gap: 3rem;
     padding: 10px;
     margin: 10px;
-
-    
   }
-  .vision{
+  .vision {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 3rem;
     padding: 10px;
     margin: 10px;
   }
-
 }
 
+@media (max-width: 768px) {
+  .mision {
+    display: grid;
+    grid-template-columns: 100%;
+    padding: 10px;
+    margin-bottom: 30px;
+  }
+  .vision {
+    display: grid;
+    grid-template-columns: 100%;
+    padding: 10px;
+    margin: 10px;
+  }
+}
 
 .misionimg img {
   max-width: 100%;
@@ -261,7 +285,7 @@ p {
   box-shadow: 0 0 10px 0 rgba(92, 53, 151, 0.863);
   border-radius: 20px;
 }
-.visionimg img:hover{
+.visionimg img:hover {
   -webkit-transform: scale(1.05);
   transform: scale(1.05);
   overflow: hidden;
@@ -278,11 +302,17 @@ p {
   align-items: baseline;
 }
 
+.misiondescription p {
+  color: #656d78;
+}
+@media (max-width: 768px) {
+  .misiondescription {
+    grid-row: 1/1;
+  }
 
-
-.misiondescription p{
-
-  color: #656d78;;
+  .misionimg {
+    grid-column: 2/-2;
+  }
 }
 
 /* Materiales */
@@ -290,7 +320,7 @@ p {
   text-align: justify;
   margin: 20px auto;
   font-family: "Roboto", sans-serif;
-    color: #656d78;;
+  color: #656d78;
 }
 .materialdescripcion li {
   list-style: circle;
@@ -300,7 +330,6 @@ p {
 }
 
 @media (max-width: 768px) {
-
 }
 .material h5 {
   margin-top: 1rem;
@@ -328,7 +357,7 @@ p {
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
     margin: 2rem auto;
-    align-items:initial;
+    align-items: initial;
   }
   .material h5 {
     font-family: "Roboto", sans-serif;
@@ -340,15 +369,11 @@ p {
   }
 }
 
-
-
 .material {
   margin: 1.5rem;
   padding: 20px;
   border-bottom: #bbbbbb8c solid 1px;
 }
-
-
 
 /* Valores */
 
@@ -390,8 +415,6 @@ p {
   margin: 40px;
 }
 
-
-
 .materialimg:hover {
   -webkit-transform: scale(1.03);
   transform: scale(1.03);
@@ -406,8 +429,8 @@ p {
 
 @media (min-width: 768px) {
   .valoresiconos {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -444,8 +467,9 @@ p {
 }
 
 .imgResponsiva img {
-  height: auto;
+  height: 100%;
   width: 100%;
+  object-fit: cover;
 }
 
 .servicio h3 {
@@ -463,7 +487,12 @@ p {
   margin: 1rem auto;
   color: #656d78;
   font-size: 17px;
+}
 
+@media (max-width: 768px) {
+  .servicio p {
+    margin: .5rem 1rem;
+  }
 }
 .servicio img {
   margin: 2px;
@@ -496,7 +525,6 @@ p {
 .servicios ul {
   padding-left: 40px;
   padding-bottom: 10px;
-
 }
 
 /* Asesoria */
@@ -504,15 +532,17 @@ p {
   width: 100%;
   height: 80vh;
   object-fit: cover;
-  
 }
 
-.asesoria{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
-  align-items: initial;
-  margin-top:40px;
+
+@media (min-width: 768px){
+  .asesoria {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    align-items: initial;
+    margin-top: 40px;
+  }
 }
 
 
@@ -525,7 +555,9 @@ p {
   font-size: 1.5rem;
   text-transform: uppercase;
   color: #ffca28;
-  
+}
+.asesoriadescripcion p{
+  margin-bottom: 2rem;
 }
 
 .imgAsesoria {
@@ -614,7 +646,7 @@ textarea {
   border: none;
   border-radius: 50px;
   transition: 0.3s;
-  background-color: #ffca28; ;
+  background-color: #ffca28;
   animation: glow 1s infinite;
   transition: 0.5s;
 }
@@ -637,8 +669,6 @@ textarea {
 }
 
 @keyframes glow {
- 
-
   0% {
     box-shadow: 5px 5px 20px rgb(235, 219, 4), -5px -5px 20px rgb(241, 167, 9);
   }
