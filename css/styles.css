@@ -1,145 +1,152 @@
 * {
-    box-sizing: border-box;
-  }
-  
-  body {
-    background: rgb(230, 230, 236);
-    color: rgb(0, 0, 0);
+  box-sizing: border-box;
+}
 
-  }
-  
-  .container {
-    max-width: 1170px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 1.5em;
-  }
-  
-  ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .logoContact {
-    text-align: center;
-    font-size: 2em;
-  }
+body {
+  background: rgb(230, 230, 236);
+  color: rgb(0, 0, 0);
 
-  .content{
-    margin-top: 20px;
-  }
+}
 
-  .contactTitulo{
-    font-size: 40px;
-    color: #000000;
-    padding-bottom: 20px;
-    padding-top: 0px;
-  }
+.container {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.5em;
+}
 
- 
-  .contact-wrapper > * {
-    padding: 1em;
-  }
-  
-  .contact-form {
-    background: rgbrgb(235, 235, 241);
-    height: 480px;
-  }
-  
-  .contact-form form {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-  
-  .contact-form form label {
-    display: block; 
-  }
-  
-  .pForm {
-    margin: 0;
-    padding: 1em;
-  }
+ul {
+  list-style: none;
+  padding: 0;
+}
 
-  .contact-form form .block {
-    grid-column: 1 / 3;
-  }
-  
-  .inputcontact {
-    width: 100%;
-    padding: 0.7em;
-    border: none;
-    background: none;
-    outline: 0;
-    color:#000000;
-    font-size: 17px;
-    border-bottom: 1px solid #ffca28;
-  }
+.logoContact {
+  text-align: center;
+  font-size: 2em;
+}
 
+.content{
+  margin-top: 20px;
+}
+
+.contactTitulo{
+  font-size: 40px;
+  color: #000000;
+  padding-bottom: 20px;
+  padding-top: 0px;
+}
+
+
+.contact-wrapper > * {
+  padding: 1em;
+}
+
+.contact-form {
+  background: rgbrgb(235, 235, 241);
+  height: 480px;
+}
+
+.contact-form form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.contact-form form label {
+  display: block; 
+}
+
+.pForm {
+  margin: 0;
+  padding: 1em;
+}
+
+.contact-form form .block {
+  grid-column: 1 / 3;
+}
+
+.inputcontact {
+  width: 100%;
+  padding: 0.7em;
+  border: none;
+  background: none;
+  outline: 0;
+  color:#000000;
+  font-size: 17px;
+  border-bottom: 1px solid #ffca28;
+}
+
+.block{
+  padding-top: 0px;
+  margin: -50px;
+}
+
+@media (max-width: 700px) {
   .block{
-    padding-top: 0px;
+    margin: -75px;
   }
+}
 
-  .contact-form form button{
-    color:#ffffff;
-    cursor: pointer;
-  }
+.contact-form form button{
+  color:#ffffff;
+  cursor: pointer;
+}
 
-  .contactG{
-    text-align: center;
-    color:#ffca28;
-  }
-  
-  .contact-form form select option {
-    background:rgb(230, 230, 236);
-    color:#000000;
-  }
+.contactG{
+  text-align: center;
+  color:#ffca28;
+}
 
-  .contact-form form button {
-    background: #af061a;
-    border: 0;
-    text-transform: uppercase;
-    padding: 1em;
-    border-radius: 20px;
-    box-shadow: 0 0 10px 0 rgb(228, 65, 65);
+.contact-form form select option {
+  background:rgb(230, 230, 236);
+  color:#000000;
+}
 
-  }
+.contact-form form button {
+  background: #af061a;
+  border: 0;
+  text-transform: uppercase;
+  padding: 1em;
+  border-radius: 20px;
+  box-shadow: 0 0 10px 0 rgb(228, 65, 65);
+
+}
+
+.contact-form form button:hover,
+.contact-form form button:focus {
+  background: #d63031;
+  color: #fff;
+  transition: background-color 1s ease-out;
+  outline: 0;
+}
+
+/* Información de contacto*/
+.contact-info {
+  background: rgbrgb(235, 235, 241);
+  border-left: rgba(255, 255, 255, 0.233) solid 1px;
+}
+
+.contact-info h4,
+.contact-info ul,
+.contact-info p {
+  text-align: center;
+  margin: 0 0 1rem 0;
+  color: rgb(0, 0, 0);
+}
+
+/* Tamaño de la pagina */
+@media (min-width: 2000px) {
   
-  .contact-form form button:hover,
-  .contact-form form button:focus {
-    background: #d63031;
-    color: #fff;
-    transition: background-color 1s ease-out;
-    outline: 0;
+  .contact-wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
   }
-  
-  /* Información de contacto*/
-  .contact-info {
-    background: rgbrgb(235, 235, 241);
-    border-left: rgba(255, 255, 255, 0.233) solid 1px;
+  .contact-wrapper > * {
+    padding: 2em;
   }
-  
   .contact-info h4,
   .contact-info ul,
   .contact-info p {
-    text-align: center;
-    margin: 0 0 1rem 0;
-    color: rgb(0, 0, 0);
+    text-align: left;
   }
-  
-  /* Tamaño de la pagina */
-  @media (min-width: 2000px) {
-    
-    .contact-wrapper {
-      display: grid;
-      grid-template-columns: 2fr 1fr;
-    }
-    .contact-wrapper > * {
-      padding: 2em;
-    }
-    .contact-info h4,
-    .contact-info ul,
-    .contact-info p {
-      text-align: left;
-    }
-  }
-  
+}
+

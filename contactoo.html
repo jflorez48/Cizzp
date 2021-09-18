@@ -68,22 +68,22 @@
         <h3 class="contactG">¡Gracias por visitar nuestra página web! <br>
           Puede contactarnos por diferentes medios o bien déjenos sus datos y nos comunicaremos a la brevedad.
         </h3>
-        <form action="">
+        <form action="correos.php" method="POST">
           <p class="pForm">
             <label clas="label">Nombre completo</label>
-            <input class="inputcontact" id="nombre" type="text" name="nombre">
+            <input class="inputcontact" id="nombre" type="text" name="nombre" required>
           </p>
           <p class="pForm">
             <label clas="label">Correo electrónico</label>
-            <input class="inputcontact" id="correo" type="email" name="correo">
+            <input class="inputcontact" id="correo" type="email" name="correo" required>
           </p>
           <p class="pForm">
             <label clas="label">Número de teléfono</label>
-            <input class="inputcontact" id="telefoono" type="tel" name="telefono">
+            <input class="inputcontact" id="telefoono" type="tel" name="telefono" required>
           </p>
           <p class="pForm">
             <label clas="label">Método de contacto</label>
-            <select class="inputcontact" name="modoContacto" id="modoContacto">
+            <select class="inputcontact" name="modoContacto" id="modoContacto" required>
               <option>Teléfono</option>
               <option>WhatsApp</option>
               <option>Correo</option>
